@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yutyu.mapper.MemberMapper">
+
+    <resultMap id="BaseResultMap" type="com.yutyu.domain.Member">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="birthday" column="birthday" jdbcType="TIMESTAMP"/>
+            <result property="height" column="height" jdbcType="FLOAT"/>
+            <result property="weigth" column="weigth" jdbcType="FLOAT"/>
+            <result property="location" column="location" jdbcType="INTEGER"/>
+            <result property="kouqiu" column="kouqiu" jdbcType="INTEGER"/>
+            <result property="lanwang" column="lanwang" jdbcType="INTEGER"/>
+            <result property="faqiu" column="faqiu" jdbcType="INTEGER"/>
+            <result property="jobId" column="job_id" jdbcType="INTEGER"/>
+            <result property="clubId" column="club_id" jdbcType="INTEGER"/>
+            <result property="photo" column="photo" jdbcType="INTEGER"/>
+            <result property="age" column="age" jdbcType="INTEGER"/>
+            <result property="number" column="number" jdbcType="INTEGER"/>
+            <result property="backing" column="backing" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,birthday,
+        height,weigth,location,
+        kouqiu,lanwang,faqiu,
+        job_id,club_id,photo,
+        age,number,backing
+    </sql>
+</mapper>
